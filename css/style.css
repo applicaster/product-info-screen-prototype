@@ -1,0 +1,12 @@
+.main-image {
+  width:100%;
+}
+
+
+@media all and (orientation: landscape) {
+  .main-image {
+    width: 50%;
+    float: right;
+    padding: 0 0 3% 3%;
+  }
+}
