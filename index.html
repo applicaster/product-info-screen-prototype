@@ -15,6 +15,10 @@
          contentHeight = $('.table-view-cell').outerHeight()*$('.table-view-cell').length;
       }
       $(function() {
+        var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+        if (is_uiwebview) {
+          $('body').addClass('ios');
+        }
         calcCellSize();
         $(window).resize(function() {
             calcCellSize();
