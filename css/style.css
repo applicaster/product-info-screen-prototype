@@ -1,11 +1,17 @@
 body {
   background-color:#000;
+  position:static;
 }
 
 p {
   color:#fff;
 }
 
+.container {
+  position:absolute;
+  background:red;
+
+}
 .bar {
   background: #181c1f;
   border-bottom: 1px solid #000;
@@ -16,15 +22,11 @@ h1.title {
   font-weight: normal;
 }
 
-.main-image {
-  width:100%;
-}
-
 .content {
+  position:static;
   background-color:#000;
+
 }
-
-
 .content > .table-view:first-child {
   margin-top: 0;
 
@@ -34,17 +36,18 @@ h1.title {
   background: #181c1f;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  line-height:16px;
+  line-height:11px;
   margin-bottom:0;
+  padding:0;
+  margin:0;
 }
 
 .table-view-cell {
   padding:0;
   width: 100%;
-  display: inline-block;
+  display: block;
   position: relative;
   border-bottom:3px solid #ef0080;
-
 }
 .table-view-cell:last-child {
   border-bottom:3px solid #ef0080;

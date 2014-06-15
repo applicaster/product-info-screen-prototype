@@ -3,62 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Ratchet template page</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link href="css/ratchet.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery-1.11.1.min.js"></script>
-    <script>
+    <script type="text/javascript">
       calcCellSize = function() {
         $('.table-view-cell').height($('.table-view-cell').width()/16*9);
+         contentHeight = $('.table-view-cell').outerHeight()*$('.table-view-cell').length;
       }
       $(function() {
         calcCellSize();
-        $( window ).resize(function() {
+        $(window).resize(function() {
             calcCellSize();
         });
       });
     </script>
   </head>
   <body>
-    <header class="bar bar-nav">
-      <h1 class="title">Info Screen title</h1>
-    </header>
-    <div class="content">
-      <ul class="table-view">
-        <li class="table-view-cell media">
-            <img src="http://lorempixel.com/640/360/people/9/"></img>
-            <div class="caption">
-              <p>Caption</p>
-            </div>
-        </li>
-        <li class="table-view-cell media">
-            <img src="http://lorempixel.com/640/360/people/1/"></img>
-            <div class="caption">
+      <header class="bar bar-nav">
+        <h1 class="title">Info Screen title</h1>
+      </header>
+      <div class="content">
+        <ul class="table-view">
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/9/"></img>
+              <div class="caption">
                 <p>Caption</p>
-            </div>
-        </li>
-        <li class="table-view-cell media">
-            <img src="http://lorempixel.com/640/360/people/2/"></img>
-            <div class="caption">
+              </div>
+          </li>
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/2/"></img>
+              <div class="caption">
                 <p>Caption</p>
-            </div>
-        </li>
-        <li class="table-view-cell media">
-            <img src="http://lorempixel.com/640/360/people/9/"></img>
-            <div class="caption">
-              <p>Caption</p>
-            </div>
-        </li>
-        <li class="table-view-cell media">
-            <img src="http://lorempixel.com/640/360/people/1/"></img>
-            <div class="caption">
+              </div>
+          </li>
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/1/"></img>
+              <div class="caption">
                 <p>Caption</p>
-            </div>
-        </li>
-    </ul>
+              </div>
+          </li>
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/2/"></img>
+              <div class="caption">
+                <p>Caption</p>
+              </div>
+          </li>
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/9/"></img>
+              <div class="caption">
+                <p>Caption</p>
+              </div>
+          </li>
+          <li class="table-view-cell media">
+              <img src="http://lorempixel.com/640/360/people/1/"></img>
+              <div class="caption">
+                <p>Caption</p>
+              </div>
+          </li>
+        </ul>
     </div>
   </body>
-
 </html>
